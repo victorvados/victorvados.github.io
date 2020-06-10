@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS</title>
+    <meta name="author" content="Víctor Jiménez García">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <a class="navbar-brand" href="../index.html">Inicio</a>
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTTP/index.html">HTTP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../DNS/index.html">DNS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../CORREO/index.html">Correo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../VPN/index.html">VPN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../WIFI/index.html">Wi-Fi</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">DNS</h1>
+                        <p class="lead mt-4">DNS son las iniciales de Domain Name System (sistema de nombres de dominio) y es una tecnología 
+                          basada en una base de datos que sirve para resolver nombres en las redes, es decir, para conocer la dirección 
+                          IP de la máquina donde está alojado el dominio al que queremos acceder.</p>
+                        <br>
+                        <p class="lead">Cuando un ordenador está conectado a una red (ya sea Internet o una red casera) tiene asignada una dirección 
+                          IP. Si estamos en una red con pocos ordenadores, es fácil tener memorizadas las direcciones IP de cada uno 
+                          de los ordenadores y así acceder a ellos pero ¿qué ocurre si hay miles de millones de dispositivos y cada 
+                          uno tiene una IP diferente? Pues que se haría imposible, por eso existen los dominios y las DNS para traducirlos.
+                          Por lo tanto, el DNS es un sistema que sirve para traducir los nombres en la red, y está compuesto por tres
+                           partes con funciones bien diferenciadas.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Principales características</h1>
+                        <ul class="lead mt-4">
+                            <li>Función : Direcciones IP > Nombre máquina</li>
+                            <li>Es más fácil de recordar un nombre que una dirección IP</li>
+                            <li>Se usa tecnología Cliente/Servidor</li>
+                            <li>Base de datos distribuida</li>
+                            <li>Antiguamente exístia un archivo "hosts.txt" en cada máquina con esos datos</li>
+                            <li>En 1983 se redactan los RFCs 882 y 883 que especifícan el servicio DNS</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row align-items-center jumbotron jumbotron-fluid">
+            <div class="col-5 m-auto p-1">
+                <img src="../img/dns1.PNG" class="img-fluid" alt="DNS1" style="width: 90%;">
+            </div>
+            <div class="col-5 m-auto p-1">
+                <img src="../img/dns2.PNG" class="img-fluid" alt="DNS2" style="width: 90%;">
+            </div>
+        </div>
+        <div class="row mt-4 jumbotron jumbotron-fluid">
+            <div class="col-5 m-auto p-1">
+                <img src="../img/dns3.PNG" class="img-fluid" alt="DNS3" style="width: 90%;" >
+            </div>
+            <div class="col-5 m-auto p-1">
+                <img src="../img/dns4.PNG" class="img-fluid" alt="DNS4" style="width: 90%;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Dominios y Zonas</h1>
+                        <ul class="lead mt-4">
+                            <li><span style="font-weight: bold;">com</span> Organizaciones comerciales [yahoo.com]</li>
+                            <li><span style="font-weight: bold;">edu</span> Organizaciones educativas [mit.edu]</li>
+                            <li><span style="font-weight: bold;">net</span> Organizaciones dedicadas a Internet [php.net]</li>
+                            <li><span style="font-weight: bold;">org</span> Organizaciones no comerciales [linux.org]</li>
+                            <li><span style="font-weight: bold;">gov</span> Organizaciones gubernamnetales [nasa.gov]</li>
+                            <li><span style="font-weight: bold;">org</span> Organizaciones geográficas
+                                <ul>
+                                    <li><span style="font-weight: bold;">es</span> España</li>
+                                    <li><span style="font-weight: bold;">fr</span> Francia</li>
+                                    <li><span style="font-weight: bold;">it</span> Italia</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><span style="font-weight: bold;">ICANN</span> organismo encargado de la gestión de los dominios raíz y TLD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Dominios de primer nivel TLD</h1>
+                        <ul class="lead mt-4">
+                            <li><span style="font-weight: bold;">Zona</span> 
+                                Es un archivo que tiene información de parte del espacio de nombres de dominio.</li>
+                            <li><span style="font-weight: bold;">Dominio</span> 
+                                Es un subárbol dentro del árbol del espacio de nombres de dominio</li>
+                            <li><span style="font-weight: bold;">Autoridad sobre la zona</span> 
+                                Servidor de nombre que tiene información sobre la zona
+                                <ul>
+                                    <li>Un servidor DNS puede tener autoridad sobre varias zonas</li>
+                                </ul>
+                            </li>
+                            <li><span style="font-weight: bold;">Delegar</span> 
+                                Descentralizar la administración BD de DNS, dividiéndola en subdominios 
+                                y cediendo el control del subdominio a otra autoridad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row jumbotron jumbotron-fluid">
+            <div class="col-6">
+                <img src="../img/dns5.PNG" style="width: 100%;" class="img-fluid m-auto" alt="DNS5">
+            </div>
+            <div class="col-6">
+                <img src="../img/dns6.PNG" style="width: 100%;" class="img-fluid m-auto" alt="DNS5">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Tipos de Servidores DNS</h1>
+                        <ul class="lead mt-4">
+                            <li><span style="font-weight: bold;">Primario o Maestro</span></li>
+                            <p>Obtiene la información de sus zonas de sus archivos locales</p>
+                            <li><span style="font-weight: bold;">Secundario o Esclavo</span></li>
+                            <p>Obtiene información de su zona o zonas
+                                de otro servidor de nombres (generalmente ser un servidor
+                                primario) que tiene autoridad sobre esa zona o zonas.
+                                Interesante para evitar cadas del sistema. La información del
+                                servidor primario lo obtiene mediante una transferencia de
+                                zona</p>
+                            <li><span style="font-weight: bold;">Caché</span></li>
+                            <p>Solo atiende a consultas de clientes DNS. Acelera las consultas</p>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Base de Datos del protocolo DNS
+                        </h1>
+                        <ul class="lead mt-4">
+                            <p>Cada Servidor DNS mantiene dos bases de datos que sirve para asociar nombre e IPs</p>
+                            <li><span style="font-weight: bold;">NOMBRE <---> DIRECCIÓN IP</span></li>
+                            <p>Archivos de zona asocian nombres con IPs</p>
+                            <li><span style="font-weight: bold;">NOMBRE --> IP</span></li>
+                            <p>BD de resolución inversa asocia IPS con nombres</p>
+                            <li><span style="font-weight: bold;">NOMBRE <-- IP</span></li>
+                            <p>Solo atiende a consultas de clientes DNS. Acelera las consultas</p>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Información de Zona</h1>
+                        <ul class="lead mt-4">
+                            <p>Contiene los registro de recursos RR que describen la información relativa al dominio DNS</p>
+                            <p>El formato de cada RR es:</p>
+                            <p>Propietario TTL Clase Tipo RDATA</p>
+                            <p>Donde la descripción de cada uno de los campos es:</p>
+                            <li><span style="font-weight: bold;">Propietario</span> nombre del hostso dominio DNS
+                                <ul>
+                                    <li>El símbolo @ representa el nombre de la zona</li>
+                                    <li>Una cadena vacía representa al propietario del RR anterior</li>
+                                </ul>
+                            </li>
+                            <li><span style="font-weight: bold;">TTL</span> Tiempo de vida o número de segundos que está en caché</li>
+                            <li><span style="font-weight: bold;">Clase</span> Te Generalmente IN de Internet, representa una red TCP/IP</li>
+                            <li><span style="font-weight: bold;">Tipo de registro</span>
+                                <ul>
+                                    <li>SOA</li>
+                                    <li>NS</li>
+                                    <li>A</li>
+                                    <li>PTR</li>
+                                    <li>MX</li>
+                                    <li>CNAME</li>
+                                    <li>TXT</li>
+                                    <li>SRV</li>
+                                </ul>
+                            </li>
+                            <li><span style="font-weight: bold;">RDATA</span> Información específica de un registro</li>
+                        </ul>
+                        <img src="../img/dns7.PNG" class="img-fluid mt-5" alt="DNS7" style="width: 100%;">
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Registro de recursos RR</h1>
+                        <ul class="lead mt-4">
+                            <li><span style="font-weight: bold;">SOA</span> (Start of Authority) Inicio de autoridad</li>
+                            <li><span style="font-weight: bold;">NS</span> (Name Server) Establece los 
+                                servidores DNS para cada zona</li>
+                            <li><span style="font-weight: bold;">A</span> (Address) Establece una correspondencia
+                                entre un FDQN y una dirección IP</li>
+                            <li><span style="font-weight: bold;">PTR PoinTeR</span> Hace lo contrario que el registro A</li>
+                            <li><span style="font-weight: bold;">CNAME</span> Canonical Name Crea un alias para el nombre del
+                                dominio especificado</li>
+                            <li><span style="font-weight: bold;">MX Mail eXcahange</span> Indica una o varias máquinas encargadas
+                                de entregar el correo al dominio</li>
+
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">DIG</h1>
+                        <ul class="lead mt-4">
+                            <p>El comando dig (Domain Information Groper) permite realizar consultas a los servidores DNS</p>
+                            <li>Dig @servidor dns nombre opciones tipo</li>
+                            <li>@servidor dns: nombre o IP del servidor DNS a quien preguntamos</li>
+                            <li>Nombre de dominio cuya IP queremos resolver</li>
+                            <li>Tipo de consulta. Valores posibles
+                                <ul>
+                                    <li>A IP del servidor que aloja al dominio (por defecto)</li>
+                                    <li>NS servidores DNS</li>
+                                    <li>MX servidores de correo</li>
+                                    <li>ANY todas las anteriores</li>
+                                    <li>AAAA IP en IPv6 (si tiene)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row lead jumbotron jumbotron-fluid text-center">
+            <div class="col-4">
+                <h3>Obtención de todos los registros</h3>
+                <img src="../img/dig1.PNG" class="img-fluid mt-2" alt="DNS">
+            </div>
+            <div class="col-4">
+                <h3>Obtención de todos los registros</h3>
+                <img src="../img/dig2.PNG" class="img-fluid mt-2" alt="DNS">
+            </div>
+            <div class="col-4">
+                <h3>Obtención de una IPv6</h3>
+                <img src="../img/dig3.PNG" class="img-fluid mt-2" alt="DNS">
+            </div>
+        </div>
+        <div class="row lead jumbotron jumbotron-fluid text-center">
+            <div class="col-4">
+                <h3>Obtención del servidor DNS maestro</h3>
+                <img src="../img/dig4.PNG" class="img-fluid mt-2" alt="DNS">
+            </div>
+            <div class="col-4">
+                <h3>Resolución inversa</h3>
+                <img src="../img/dig5.PNG" class="img-fluid mt-2" alt="DNS">
+            </div>
+            <div class="col-4">
+                <h3>Consulta a otro servidor DNS</h3>
+                <img src="../img/dig6.PNG" class="img-fluid mt-2" alt="DNS">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Métodos de búsqueda</h1>
+                        <ul class="lead mt-4">
+                            <li>Resolución de nombres mecanismo por el que se traducen los nombres de máquinas a direcciones IP</li>
+                            <li>Tipos de búsqueda
+                                <ul>
+                                    <li>Búsqueda recursiva Se realiza una petición de resolución de
+                                        nombres al servidor DNS local, y si el servidor no dispone de la
+                                        información solicitada va a buscarla al servidor de nombres con
+                                        autoridad que lo contiene</li>
+                                    <li>Búsqueda iterativa el servidor DNS local devuelve la mejor
+                                        repuesta que puede ofrecer al en cliente en función del
+                                        contenido en su caché, pero si el servidor no dispone de esa
+                                        información solicitada indica la IP del siguiente servidor de
+                                        nombres autorizado, comenzando por un servidor raíz</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <img src="../img/DNS8.PNG" class="img-fluid mt-3" alt="DNS8">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div class="row">
+            <div class="col-12">
+                <footer class="page-footer font-small navbar-dark bg-dark">
+                    <div class="footer-copyright text-center py-3" style="color: white;">
+                        ©2020 Copyright: GitHub realizado por Víctor Jiménez</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>

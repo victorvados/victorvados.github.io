@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORREO</title>
+    <meta name="author" content="Víctor Jiménez García">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <a class="navbar-brand" href="../index.html">Inicio</a>
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTTP/index.html">HTTP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../DNS/index.html">DNS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../CORREO/index.html">Correo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../VPN/index.html">VPN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../WIFI/index.html">Wi-Fi</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Servicio de Correo Electrónico</h1>
+                        <p class="lead mt-4">Un servidor de correo es una aplicación de red de computadoras 
+                            ubicada en un servidor de Internet, para prestar servicio de correo electrónico 
+                            (correo-e o e-mail). De forma predeterminada, el protocolo estándar para la transferencia 
+                            de correos entre servidores es el Protocolo Simple de Transferencia de Correo 
+                            (Simple Mail Transfer Protocol, SMTP). Está definido en el RFC 2821 y es un estándar 
+                            oficial de Internet.</p>
+                        <ul class="lead">
+                            <li>El Mail Transfer Agent (MTA) tiene varias formas de comunicarse con otros servidores de correo haciendo uso del SMTP:
+                                <ul>
+                                    <li>Recibe los mensajes desde otro MTA. Actúa como "servidor" de otros servidores</li>
+                                    <li>Envía los mensajes hacia otro MTA. Actúa como un "cliente" de otros servidores</li>
+                                    <li>Actúa como intermediario entre un Mail Submission Agent y otro MTA</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="col-12 mt-5">
+                            <img src="../img/correo1.PNG" alt="CORREO" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Seguro o inseguro</h1>
+                        <ul class="lead mt-4">
+                            <li>Si tiene en cuenta el proceso, hay por lo menos una copia del correo en el servidor
+                                 de envío y otra copia en el servidor de recepción</li>
+                            <li>Las políticas de funcionamiento de cada servidor, con o sin aviso a los 
+                                usuarios remitente y/o destinatario, podrían:
+                                <ul>
+                                    <li>Recibir correos de acuerdo a algún parámetro</li>
+                                    <li>No destruir las copias de los correos, por ejemplo, al trasferirlos satisfactoriamente</li>
+                                    <li>Copiar los correos a algún otro registro o archivo</li>
+                                    <li>Enviar una o más copias a otros destinatarios</li>
+                                    <li>No destruir nunca los correos almacenados</li>
+                                </ul>
+                            </li>
+                            <li>Es de suma importancia considerar qué entidad, institución y funcionario son los 
+                                responsables de administrar finalmente los servidores de correo que cada uno usa. 
+                                En muchos casos, los correos pueden ser fuente de invasión a la privacidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Generalidades</h1>
+                        <ul class="lead mt-4">
+                            <li>Este servicio se basa en la transmisión de mensajes entre usuarios</li>
+                            <li>Permite incluir archivos adjuntos</li>
+                            <li>Puede funcionar a nivel de Internet o a nivel local</li>
+                            <li>Fue uno de los primeros servicios en funcionar en ARPANET</li>
+                            <li>En principio solo podía enviar mensajes de texto</li>
+                            <li>Los tipos MIME ofrece mas posibilidades al correo</li>
+                            <li>Servicio de asistencia fiable</li>
+                            <li>Es un servicio cliente/servidor</li>
+                            <li>Los destinatarios tiene un buz´on de correo ubicado en el servidor</li>
+                            <li>El buzón gestiona y mantiene los mensajes que le han sido enviados</li>
+                            <li>Intervienen los servidores de correo del que envia y del que recibe</li>
+                            <li>En el caso de errores puede reenviarlo desde una cola de mensajes</li>
+                            <li>Se suelen reenviar a los 30 minutos</li>
+                            <li>El servidor de correo si tiene que enviar diversos mensajes al mismo 
+                                servidor lo puede enviar dentro de la misma conexión TCP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Elemento de correo</h1>
+                        <ul class="lead mt-4">
+                            <li>MTA
+                                <ul>
+                                    <li>Agente de transferencia de correo</li>
+                                    <li>Utiliza el protocolo SMTP</li>
+                                    <li>Es lo que se conoce como servidor de correo</li>
+                                    <li>Gestiona la distribuci´on de correo saliente y la llegada del entrante</li>
+                                    <li>Ejemplos: sendmail, postfix, qmail, exim...</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>MDA</li>
+                            <ul>
+                                <li>Agente de entrega de correo</li>
+                                <li>Utiliza protocolos POP, IMAP</li>
+                                <li>Copia los mensajes del servidor al buz´on del usuario</li>
+                            </ul>
+                            <br>
+                            <li>MUA
+                                <ul>
+                                    <li>Agente de usuario de correo</li>
+                                    <li>Interfaz para componer, editar, correo..</li>
+                                    <li>Ejemplos: Outlook, Thunderbird, mutt...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Estructura de los mensajes de correo</h1>
+                        <ul class="lead mt-4">
+                            <li>Cabecera
+                                <ul>
+                                    <li><span style="font-weight: bold; color: red;">FROM</span>Remitente</li>
+                                    <li><span style="font-weight: bold; color: red;">TO</span>Destinatario</li>
+                                    <li><span style="font-weight: bold; color: red;">CC</span> Copia</li>
+                                    <li><span style="font-weight: bold; color: red;">BCC</span> Copia oculta</li>
+                                    <li><span style="font-weight: bold; color: red;">REPLY-TO</span> Dirección al
+                                         que remitente quiere que se le responda</li>
+                                    <li><span style="font-weight: bold; color: red;">DATE</span> Fecha</li>
+                                    <li><span style="font-weight: bold; color: red;">SUBJECT</span> Asunto</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>Cuerpo</li>
+                            <ul>
+                                <li>Contiene la información propiamente dicha</li>
+                                <li>Conjunto de líneas en formato ASCII</li>
+                                <li>Se le puede añadir una firma</li>
+                            </ul>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <h3>Cabecera correo</h3>
+                            <img src="../img/correo2.PNG" alt="CORREO" class="img-fluid mt-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Estructura de los mensajes de correo</h1>
+                        <ul class="lead mt-4">
+                            <li>Cabecera
+                                <ul>
+                                    <li><span style="font-weight: bold; color: blue;">Content-Type: multipart/mixed </span>
+                                        Hay mas de un objeto (archivos adjuntos)</li>
+                                    <li><span style="font-weight: bold; color: blue;">User-Agent</span>Indica el agente de usuario empleado</li>
+                                    <li><span style="font-weight: bold; color: blue;">Date</span> Fecha de recepci´on del mensaje</li>
+                                    <li><span style="font-weight: bold; color: blue;">To</span> A quién va dirigido</li>
+                                    <li><span style="font-weight: bold; color: blue;">From</span> Quién lo envía</li>
+                                    <li><span style="font-weight: bold; color: blue;">Subject</span> Asunto</li>
+                                    <li><span style="font-weight: bold; color: blue;">Message-ID</span> Identificador del mensaje</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Protocolo SMTP</h1>
+                            <ul class="lead mt-4">
+                                <li>Protocolo Simple de Transferencia de Correo</li>
+                                <li>Transporte de correo saliente desde el usuario al servidor del destinatario</li>
+                                <li>Usa el puerto 25</li>
+                                <li>No requiere autenticación</li>
+                                <li>Las nuevas extensiones de SMTP permiten autenticación</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Protocolo POP</h1>
+                            <ul class="lead mt-4">
+                                <li>Protocolo de Oficina de Correo</li>
+                                <li>Permite la gestión, acceso y transferencia de mensajes</li>
+                                <li>La gestión es entre nuestro servidor y el usuario final</li>
+                                <li>Autorizacion el agente de usario envia el login y la contraseña</li>
+                                <li>Transacción el agente de usario recupera los mensajes. Se pueden marcar los mensajes para borrado</li>
+                                <li>Actualizacion borra los mensajes marcados para borrado. el agente de usario envia el login y la contraseña</li>
+                                <li>Hoy en día va por la tercera versión POP3</li>
+                                <li>Usa el puerto 110</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Protocolo IMAP</h1>
+                            <ul class="lead mt-4">
+                                <li>Protocolo de Acceso a Mensajes de Internet</li>
+                                <li>Permite mantener los correos en el servidor sin tener que descargarlos</li>
+                                <li>Permite crear buzones remotos y asignar mensajes a los buzones</li>
+                                <li>Posee comandos para obtener simplemente la cabecera de los mensajes</li>
+                                <li>Utiliza el puerto 143</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Correo basado en web</h1>
+                            <ul class="lead mt-4">
+                                <li>El agente de usuario es un navegador habitual</li>
+                                <li>El usuario se comunica con el buzon via HTTP</li>
+                                <li>Útil para usuarios móviles</li>
+                                <li>Suelen usar un servidor IMAP para proporcionar la funcionalidad de los buzones</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Clientes de correo</h1>
+                            <ul class="lead mt-4">
+                                <li>Programas que relacionan al usuario con sus buzones correspondientes</li>
+                                <li>Usan protocolos como POP O IMAP</li>
+                                <li>Clientes típicos como Microsoft Outlook Express o Mozilla Thunderbird</li>
+                                <li>Clientes vía web: gmail, yahoo, msn</li>
+                                <li>Clientes en el servidor, mediante telnet, pine, mutt, mailx...</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="row">
+            <div class="col-12">
+                <footer class="page-footer font-small navbar-dark bg-dark">
+                    <div class="footer-copyright text-center py-3" style="color: white;">
+                        ©2020 Copyright: GitHub realizado por Víctor Jiménez</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>

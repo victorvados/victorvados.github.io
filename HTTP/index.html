@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP</title>
+    <meta name="author" content="Víctor Jiménez García">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <a class="navbar-brand" href="../index.html">Inicio</a>
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTTP/index.html">HTTP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../DNS/index.html">DNS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../CORREO/index.html">Correo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../VPN/index.html">VPN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../WIFI/index.html">Wi-Fi</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">HTTP</h1>
+                        <p class="lead mt-4">El Protocolo de Transferencia de HiperTexto (Hypertext Transfer Protocol) 
+                            es un sencillo protocolo cliente-servidor que articula los intercambios de información entre 
+                            los clientes Web y los servidores HTTP. La especificación completa del protocolo HTTP 1/0 está 
+                            recogida en el RFC 1945. Fue propuesto por Tim Berners-Lee, atendiendo a las necesidades 
+                            de un sistema global de distribución de información como el World Wide Web.</p>
+                        <br>
+                        <p class="lead">Desde el punto de vista de las comunicaciones, está soportado sobre
+                            los servicios de conexión TCP/IP, y funciona de la misma forma que el resto de los
+                            servicios comunes de los entornos UNIX: un proceso servidor escucha en un puerto de 
+                            comunicaciones TCP (por defecto, el 80), y espera las solicitudes de conexión de los 
+                            clientes Web. Una vez que se establece la conexión, el protocolo TCP se encarga de mantener
+                            la comunicación y garantizar un intercambio de datos libre de errores.</p>
+                        <br>
+                        <p class="lead">HTTP se basa en sencillas operaciones de solicitud/respuesta. Un cliente
+                            establece una conexión con un servidor y envía un mensaje con los datos de la solicitud.
+                            El servidor responde con un mensaje similar, que contiene el estado de la operación y 
+                            su posible resultado. Todas las operaciones pueden adjuntar un objeto o recurso sobre
+                            el que actúan; cada objeto Web (documento HTML, fichero multimedia o aplicación CGI)
+                            es conocido por su URL.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Página Web</h1>
+                        <ul class="lead mt-4">
+                            <li>Consta de objetos como por ejemplo pueden ser :
+                                <ul>
+                                    <li>Documento HTML</li>
+                                    <li>Imagen GIF</li>
+                                    <li>Applet Java</li>
+                                    <li>Etc...</li>
+                                </ul>
+                            </li>
+                            <li><span style="font-weight: bold; color: red;">Ejemplo</span> Una página Web con cinco imágenes tienes seis objetos. [Documento HTML + 5 imágenes]</li>
+                            <li>El documento HTML referncia a los otros objetos</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">URL</h1>
+                        <ul class="lead mt-4">
+                            <li>Corresponde a la dirección de la página web</li>
+                            <li>Tiene dos componentes: 
+                                <ul>
+                                    <li>El nombre del host del servidor</li>
+                                    <li>La ruta de los objetos</li>
+                                </ul>
+                            </li>
+                            <li><span style="font-weight: bold; color: red;">Ejemplo</span> www.iesvirgendelcarmen.com/informatica</li>
+                            <li><span style="font-weight: bold; color: red;">Host</span> www.iesvirgendelcarmen.com</li>
+                            <li><span style="font-weight: bold; color: red;">Ruta</span> /informatica</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Navegador y Servidor</h1>
+                        <ul class="lead mt-4">
+                            <li><span style="font-weight: bold; color: red;">Navegador</span> es el agente de usuario o cliente que solicita la página web</li>
+                            <li><span style="font-weight: bold; color: red;">Ejemplos</span> Internet Explorer, Mozilla Firefox...</li>
+                            <li><span style="font-weight: bold; color: red;">Servidor web</span> Alberga los objetos</li>
+                            <li><span style="font-weight: bold; color: red;">Ejemplos</span> Apache, Microsoft Internet Information Server...</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Estructura WWW</h1>
+                        <ul class="lead mt-4">
+                            <li><span style="font-weight: bold; color: red;">Hipertexto</span> es un sistema de relación documental en formato
+                                 de texto enriquecido de sintaxis específica, en la que se puede enlazar unos textos con otros.</li>
+                            <li>Fue desarrollado por el CERN</li>
+                            <li>Documento plano estructurado por etiquetas HTML que el programa interpreta</li>
+                            <li>Ejemplo de etiquetas: HTML, HEAD, BODY, etc..</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1212 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Características HTTP</h1>
+                        <ul class="lead mt-4">
+                            <li>HTTP define como los clientes web demandan las páginas web</li>
+                            <li>Y como el servidor transfiere dichas páginas a los clientes</li>
+                            <li>En el navegador ponemos IP o nombre de la máquina</li>
+                            <li>http://www.google.es:80 por defecto asume el puerto 80 , es válido también www.google.es</li>
+                            <li>El servidor, normalmente, manda la página index.html, index.htm, index.php... junto a los objetos que presente dicho documento HTML</li>
+                            <li>Existen los protocolos HTTP/0.9 (obsoleto), HTTP/1.0 y HTTP/1.1 (versiones actuales) y HTTP/2.0 (nuevo)</li>
+                            <li>El servidor envia los objetos solicitados sin almacenar dato alguno sobre el cliente</li>
+                            <li>Si en pocos segundo se solicita el mismo objeto el servidor NO responde que acaba de servir el objeto, lo vuelve a mandar</li>
+                            <li>HTTP es un protocolo sin estado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Mensaje HTTP Respuesta</h1>
+                        <ul class="lead mt-4">
+                            <li>Línea inicial de status:
+                                <ul>
+                                    <li><span style="color: blue;">200 OK</span> Conexión con éxito</li>
+                                    <li><span style="color: blue;">400 Bad Request</span> petición que NO puede ser atendida</li>
+                                    <li><span style="color: blue;">404 Not Found</span> el objeto no existe en el servidor</li>
+                                </ul>
+                            </li>
+                            <li>Línea inicial de status:
+                                <ul>
+                                    <li><span style="color: red;">Connection close:</span> el servidor va a cerrar la conexión</li>
+                                    <li><span style="color: red;">Server:</span> servidor web</li>
+                                    <li><span style="color: red;">Last-Modified:</span> fecha y hora que el objeto fue creado o modificado por última vez</li>
+                                    <li><span style="color: red;">Content-Lenght</span> número de bytes de objeto enviado</li>
+                                    <li><span style="color: red;">Content-type:</span> tipo de objeto enviado</li>
+                                </ul>
+                            </li>
+                            <li>Línea de cuerpo: el objeto en cuestión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row jumbotron jumbotron-fluid">
+            <div class="col-sm-12 col-md-12 text-center">
+                <img src="../img/http1.PNG" class="img-fluid" alt="HTTP">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Petición-Respuesta HTTP</h1>
+                        <p>telnet www.iesvirgendelcarmen.com 80</p>
+                        <p>Trying 80.36.157.3...</p>
+                        <p>Connected to www.iesvirgendelcarmen.com.</p>
+                        <p>Escape character is ’^]’.</p>
+                        <p>GET / HTTP/1.0</p>
+                        <p>Host: www.iesvirgendelcarmen.com</p>
+                        <p>HTTP/1.1 200 OK</p>
+                        <p>Date: Tue, 27 Dec 2011 09:12:13 GMT</p>
+                        <p>Server: Apache/2.2.16 (Debian)</p>
+                        <p>Last-Modified: Mon, 06 Feb 2006 13:54:51 GMT</pServer:>
+                        <p>ETag: "970b76-4b-40c209b4f60c0"</p>
+                        <p>Accept-Ranges: bytes</p>
+                        <p>Content-Length: 75</p>
+                        <p>Connection: close</p>
+                        <p>Content-Type: text/html; charset=ISO-8859-1</p>
+                        <p>html></p>
+                        <p>frameset cols="*"></p>
+                        <p>frame src="ies/index1.php"></p>
+                        <p>/frameset></p>
+                        <p>html></p>
+                        <p>Connection closed by foreign host.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Características HTTP</h1>
+                        <ul class="lead mt-4">
+                            <li>Línea de petición:
+                                <ul>
+                                    <li>Campo de método</li>
+                                    <li>Campo URL</li>
+                                    <li>Campo versión HTTP</li>
+                                </ul>
+                            </li>
+                            <li>Líneas de cabecera:
+                                <ul>
+                                    <li>Métodos: GET. POST y HEAD</li>
+                                    <li>Objeto que se solicita</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Mensaje HTTP respuesta</h1>
+                        <ul class="lead mt-4">
+                            <li>Línea inicial de status:
+                                <ul>
+                                    <li><span style="color: blue;">200 OK</span> Conexión con éxito</li>
+                                    <li><span style="color: blue;">400 Bad Request</span> petición que NO puede ser atendida</li>
+                                    <li><span style="color: blue;">404 Not Found</span> el objeto no existe en el servidor</li>
+                                </ul>
+                            </li>
+                            <li>Líneas de cabecera:
+                                <ul>
+                                    <li><span style="color: red;">Connection close:</span> el servidor va a cerrar la conexión</li>
+                                    <li><span style="color: red;">Server:</span> servidor web</li>
+                                    <li><span style="color: red;">Last-Modified:</span> fecha y hora que el objeto fue creado o modificado por última vez</li>
+                                    <li><span style="color: red;">Content-Length:</span> número de bytes de objeto enviado</li>
+                                    <li><span style="color: red;">Content-type:</span> tipo de objeto enviado</li>
+                                </ul>
+                            </li>
+                            <li>Línea de cuerpo: el objeto en cuestión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Cookies</h1>
+                        <ul class="lead mt-4">
+                            <li>Es un fragmento de información que se almacena en el disco duro del
+                                visitante de una página web a través de su navegador, a petición del
+                                servidor de la página</li>
+                            <li>Esta información puede ser luego recuperada por el servidor en posteriores visitas</li>
+                            <li>Las cookies tienen tres componentes::
+                                <ul>
+                                    <li>Una línea de cabecera de cookie en el mensaje HTTP de petición</li>
+                                    <li>Un archivo de cookie que se almacena en el usuario y gestionado por el navegador</li>
+                                    <li>Una base de datos en el sitio web</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <img src="../img/http2.PNG" class="img-fluid" alt="HTTP">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img src="../img/http3.PNG" class="img-fluid" alt="HTTP">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Tipos de MIME</h1>
+                        <ul class="lead mt-4">
+                            <li>MIME (Multipurpose Internet Mail Extensions), (Extensiones de Correo Internet Multipropósito)</li>
+                            <li>Especificaciones dirigidas a que se puedan intercambiar a través de Internet todo
+                                tipo de archivos (texto, audio, vídeo, etc.) de forma transparente para el usuario</li>
+                            <li>El protocolo básico de transmisión de mensajes electrónicos de Internet soporta
+                                solo caracteres ASCII de 7 bit</li>
+                            <li>Esto limita los mensajes de correo electrónico, ya que incluyen solo caracteres
+                                suficientes para escribir en un número reducido de lenguajes, principalmente
+                                Inglés</li>
+                            <li>MIME define mecanismos para enviar otros tipos de información en un e-mail,
+                                incluyendo texto en lenguajes distintos del Inglés utilizando otros conjuntos de
+                                caracteres además de ASCII</li>
+                            <li>MIME es adicionalmente un componente fundamental en protocolos de
+                                comunicación como HTTP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Ejemplo MIME</h1>
+                        <p class="lead mt-2">manu@portatil:~ telnet www.iesvirgendelcarmen.com 80</p>
+                        <p class="lead">Trying 80.36.157.3...</p>
+                        <p class="lead">Connected to www.iesvirgendelcarmen.com.</p>
+                        <p class="lead">Escape character is ’^]’</p>
+                        <p class="lead">GET /informatica/theme/vcarmen/pix/ordenador.jpg HTTP/1.0</p>
+                        <br>
+                        <p class="lead">HTTP/1.1 200 OK</p>
+                        <p class="lead">Date: Sat, 11 Dec 2010 16:43:19 GMT</p>
+                        <p class="lead">Server: Apache/2.2.14 (Debian)</p>
+                        <p class="lead">Last-Modified: Wed, 25 Jul 2007 09:39:30 GMT</p>
+                        <p class="lead">ETag: "9a4f2c-48a3-43613495db880"</p>
+                        <p class="lead">Accept-Ranges: bytes</p>
+                        <p class="lead">Content-Length: 18595</p>
+                        <p class="lead">Connection: close</p>
+                        <p class="lead">Content-Type: image/jpeg</p>
+                        <p class="lead">X-Pad: avoid browser bug</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Protocolos Seguros</h1>
+                        <ul class="lead">
+                            <li>Secure Sockets Layer</li>
+                            <li>Se usa en transacciones seguras vía Web</li>
+                            <li>Habilita la posibilidad de usar firmas digitales, criptografía y resumen de mensajes</li>
+                            <li>Proporciona:
+                                <ul>
+                                    <li><span style="color: blue;">Autenticación</span> aseguramos que el usuario es el que dice ser</li>
+                                    <li><span style="color: blue;">Integridad</span> no hay variaciones en las trasacciones de archivos</li>
+                                    <li><span style="color: blue;">Confidencialidad</span> cifrado de mensajes</li>
+                                </ul>
+                            </li>
+                            <li><span style="color: red; font-weight: bold;">https</span> HTTP sobre SSL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Firma electrónica</h1>
+                        <ul class="lead">
+                            <li>Asocia la identidad de una persona o de un equipo informático a un mensaje o documento</li>
+                            <li>Además asegura la integridad del documento o mensaje</li>
+                            <li>Pasos a seguir:
+                                <ul>
+                                    <li>Calcular el hash o resumen del mensaje o archivo</li>
+                                    <li>Se cifra el hash con la clave privada (firma)</li>
+                                    <li>Se envía el mensaje o archivo con el hash cifrado.</li>
+                                    <li>En el otro lugar se quita la firma del mensaje o archivo</li>
+                                    <li>Se obtiene el hash enviado descifrando con la clave pública</li>
+                                    <li>Se calcula el hash del archivo o mensaje</li>
+                                    <li>Si coincide con el anterior, el mensaje no ha cambiado (integridad)</li>
+                                    <li>Si coincide, integridad además de autenticar al remitente</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Firma electrónica</h1>
+                        <div class="text-center mt-3">
+                            <img src="../img/http4.PNG" class="img-fluid" alt="HTTP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Autoridades certificadoras</h1>
+                        <ul class="lead">
+                            <li>Entidad que garantiza la identidad del usuario mediante la emisi´on
+                                de certificados, y permite la firma electr´onica y el intercambio de
+                                claves
+                                <ul>
+                                    <li><span style="color: red; font-weight: bold;">FNMT</span>: Fábrica Nacional de Moneda y Timbre.(La agencia tributaria , entre otras administraciones públicas)</li>
+                                    <li><span style="color: red; font-weight: bold;">FESTE</span>: Fundación para el Estudio de la Seguridad de las Telecomunicaciones</li>
+                                    <li><span style="color: red; font-weight: bold;">IPSCA</span>, empresa española para certificados de Servidor Seguro para el comercio electrónico</li>
+                                    <li><span style="color: red; font-weight: bold;">VERISIGN</span>, división española de la empresa VeriSign, pionera y líder mundial en la emisión de certificados digitales</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <img src="../img/http5.PNG" alt="HTTP" class="img-fluid mt-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Navegadores</h1>
+                        <ul class="lead">
+                            <li>Modo gráfico:
+                                <ul>
+                                    <li>Internet Explorer</li>
+                                    <li>Google Chrome</li>
+                                    <li>Mozilla</li>
+                                    <li>Opera</li>
+                                    <li>Safari</li>
+                                    <li>...</li>
+                                </ul>
+                            </li>
+                            <li>Modo texto:
+                                <ul>
+                                    <li>Lunx</li>
+                                    <li>w3m</li>
+                                    <li>...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <footer class="page-footer font-small navbar-dark bg-dark">
+                    <div class="footer-copyright text-center py-3" style="color: white;">
+                        ©2020 Copyright: GitHub realizado por Víctor Jiménez</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>
